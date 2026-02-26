@@ -12,7 +12,7 @@ GROUP BY c.id_cliente, c.nombre, c.correo
 HAVING MAX(v.fecha_venta) < DATE('now', '-180 days');
 
 
-S--e selecciona el nombre y correo del cliente.
+--se selecciona el nombre y correo del cliente.
 --Se obtiene la fecha de su última compra usando MAX(v.fecha_venta).
 --Se hace un JOIN entre clientes y ventas para relacionar cada cliente con sus compras.
 --Se agrupa por cliente para calcular correctamente la última fecha de compra.
